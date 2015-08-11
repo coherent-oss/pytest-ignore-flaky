@@ -1,0 +1,10 @@
+*.pyc
+*.pyo
+*.egg-info
+__pycache__
+
+.doit.db
+dist
+revision.txt
+MANIFEST
+
