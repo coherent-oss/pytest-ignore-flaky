@@ -29,7 +29,7 @@ setup(name = 'pytest-ignore-flaky',
                      ],
       py_modules = ['pytest_ignore_incremental'],
       install_requires = [
-          'pytest',
+          'pytest>=2.7',
       ],
       entry_points = {
         'pytest11': ['pytest_ignore_flaky = pytest_ignore_flaky'],
