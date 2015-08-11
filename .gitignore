@@ -6,5 +6,6 @@ __pycache__
 .doit.db
 dist
 revision.txt
+MANIFEST.in
 MANIFEST
 
