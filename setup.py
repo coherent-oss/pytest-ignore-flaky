@@ -9,7 +9,7 @@ with open(os.path.join(os.path.dirname(__file__), 'README.rst'), 'r') as fp:
 
 setup(name = 'pytest-ignore-flaky',
       description = 'ignore failures from flaky tests (pytest plugin)',
-      version = '0.1.0',
+      version = '0.1.1',
       license = 'MIT',
       author = 'Eduardo Naufel Schettino',
       author_email = 'schettino72@gmail.com',
@@ -27,7 +27,7 @@ setup(name = 'pytest-ignore-flaky',
                      'Programming Language :: Python :: 3.4',
                      'Topic :: Software Development :: Testing',
                      ],
-      py_modules = ['pytest_ignore_incremental'],
+      py_modules = ['pytest_ignore_flaky'],
       install_requires = [
           'pytest>=2.7',
       ],
