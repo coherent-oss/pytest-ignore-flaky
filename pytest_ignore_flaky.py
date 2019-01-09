@@ -14,7 +14,7 @@ class PluginIgnoreFlaky(object):
     def pytest_runtest_makereport(self, item, call):
         '''Turn failures into xfail if test is marked as "flaky".'''
         outcome = yield
-        if item.get_marker('flaky'):
+        if item.get_closest_marker('flaky'):
             report = outcome.get_result()
             if report.outcome == 'failed':
                 report.outcome = 'skipped'
