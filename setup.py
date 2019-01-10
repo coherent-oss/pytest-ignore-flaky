@@ -9,7 +9,7 @@ with open(os.path.join(os.path.dirname(__file__), 'README.rst'), 'r') as fp:
 
 setup(name = 'pytest-ignore-flaky',
       description = 'ignore failures from flaky tests (pytest plugin)',
-      version = '0.1.2',
+      version = '1.0.0',
       license = 'MIT',
       author = 'Eduardo Naufel Schettino',
       author_email = 'schettino72@gmail.com',
@@ -36,4 +36,3 @@ setup(name = 'pytest-ignore-flaky',
         },
       long_description = README_TEXT,
       )
-
