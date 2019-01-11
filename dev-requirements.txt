@@ -1,2 +1,2 @@
 pyflakes
-doit-py
+doit==0.29.0
