@@ -45,6 +45,6 @@ license
 =======
 
 The MIT License
-Copyright (c) 2015 Eduardo Naufel Schettino
+Copyright (c) 2015-2019 Eduardo Naufel Schettino and Marcos Alfredo Camargo Leal Pinto
 
 see LICENSE file
