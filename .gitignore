@@ -8,4 +8,5 @@ dist
 revision.txt
 MANIFEST.in
 MANIFEST
-
+.pytest_cache
+build
