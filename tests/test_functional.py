@@ -6,9 +6,9 @@ def get_results(recorder):
     results = {}
     for result in recorder.getreports():
         when = getattr(result, 'when', None)
-        if  when is None:
+        if when is None:
             continue
-        test_name = result.nodeid.split('::')[1]
+        test_name = result.nodeid.split('::')[-1]
         results[test_name, when] = result.outcome
     return results
 
