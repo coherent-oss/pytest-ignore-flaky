@@ -33,5 +33,9 @@ def pytest_addoption(parser):
 def pytest_configure(config):
     '''Register plugin only if any of its option is specified
     '''
+    config.addinivalue_line(
+        "markers",
+        "flaky: in case of failure mark the test as xfail. Enabled with `--ignore-flaky`"
+    )
     if config.option.ignore_flaky:
         config.pluginmanager.register(PluginIgnoreFlaky())
