@@ -32,6 +32,10 @@ If the test fails, instead of being reported as failure it will be reported as
 a `xfail`.
 
 
+pytest compatibility
+====================
+
+Tested with pytest 6.2 (2021-04-23).
 
 
 Project Details
