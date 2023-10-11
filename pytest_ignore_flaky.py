@@ -10,7 +10,7 @@ import pytest
 
 class PluginIgnoreFlaky:
 
-    @pytest.mark.hookwrapper
+    @pytest.hookimpl(hookwrapper=True)
     def pytest_runtest_makereport(self, item, call):
         '''Turn failures into xfail if test is marked as "flaky".'''
         outcome = yield
