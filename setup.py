@@ -36,4 +36,5 @@ setup(name = 'pytest-ignore-flaky',
         'pytest11': ['pytest_ignore_flaky = pytest_ignore_flaky'],
         },
       long_description = README_TEXT,
+      python_requires = ">=3.6",
       )
