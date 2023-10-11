@@ -8,7 +8,7 @@ Copyright (c) 2015 Eduardo Naufel Schettino
 
 import pytest
 
-class PluginIgnoreFlaky(object):
+class PluginIgnoreFlaky:
 
     @pytest.mark.hookwrapper
     def pytest_runtest_makereport(self, item, call):

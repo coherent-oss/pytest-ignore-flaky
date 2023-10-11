@@ -1,4 +1,3 @@
-
 from doitpy.pyflakes import Pyflakes
 from doitpy.package import Package
 

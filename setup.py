@@ -3,7 +3,7 @@ import os.path
 from setuptools import setup
 
 
-with open(os.path.join(os.path.dirname(__file__), 'README.rst'), 'r') as fp:
+with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as fp:
     README_TEXT = fp.read()
 
 
