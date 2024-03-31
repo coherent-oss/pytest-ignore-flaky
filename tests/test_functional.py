@@ -24,6 +24,7 @@ def test_mf():
     assert 3 == 2
 """
 
+
 def test_ignore_flaky(testdir, capsys):
     test = testdir.makepyfile(TEST_SAMPLE)
     rec = testdir.inline_run('--ignore-flaky', test)
@@ -47,6 +48,7 @@ import pytest
 def test_flaky_ok():
     assert 3 == 3
 """
+
 
 def test_success_flaky(testdir, capsys):
     test = testdir.makepyfile(TEST_SAMPLE_SUCCEED)

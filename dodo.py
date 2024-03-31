@@ -2,7 +2,11 @@ from doitpy.pyflakes import Pyflakes
 from doitpy.package import Package
 
 
-DOIT_CONFIG = {'default_tasks': ['pyflakes',]}
+DOIT_CONFIG = {
+    'default_tasks': [
+        'pyflakes',
+    ]
+}
 
 
 def task_pyflakes():

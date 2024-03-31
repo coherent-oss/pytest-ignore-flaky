@@ -8,8 +8,8 @@ Copyright (c) 2015 Eduardo Naufel Schettino
 
 import pytest
 
-class PluginIgnoreFlaky:
 
+class PluginIgnoreFlaky:
     @pytest.hookimpl(hookwrapper=True)
     def pytest_runtest_makereport(self, item, call):
         '''Turn failures into xfail if test is marked as "flaky".'''
@@ -25,17 +25,19 @@ def pytest_addoption(parser):
     '''py.test hook: register argparse-style options and config values'''
     group = parser.getgroup("ignore-flaky", "ignore flaky tests")
     group.addoption(
-        '--ignore-flaky', action="store_true",
-        dest="ignore_flaky", default=False,
-        help="ignore flaky tests ")
+        '--ignore-flaky',
+        action="store_true",
+        dest="ignore_flaky",
+        default=False,
+        help="ignore flaky tests ",
+    )
 
 
 def pytest_configure(config):
-    '''Register plugin only if any of its option is specified
-    '''
+    '''Register plugin only if any of its option is specified'''
     config.addinivalue_line(
         "markers",
-        "flaky: in case of failure mark the test as xfail. Enabled with `--ignore-flaky`"
+        "flaky: in case of failure mark the test as xfail. Enabled with `--ignore-flaky`",
     )
     if config.option.ignore_flaky:
         config.pluginmanager.register(PluginIgnoreFlaky())
