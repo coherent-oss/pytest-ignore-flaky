@@ -1,4 +1,4 @@
-pytest_plugins = 'pytester', 'pytest_ignore_flaky'
+pytest_plugins = ('pytester',)
 
 
 def get_results(recorder):
