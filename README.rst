@@ -4,7 +4,7 @@
 .. image:: https://img.shields.io/pypi/pyversions/pytest-ignore-flaky.svg
    :target: https://pypi.python.org/pypi/pytest-ignore-flaky
 
-.. image:: https://github.com/schettino72/pytest-ignore-flaky/workflows/main.yml/badge.svg
+.. image:: https://github.com/schettino72/pytest-ignore-flaky/actions/workflows/main.yml/badge.svg
    :target: https://github.com/schettino72/pytest-ignore-flaky/actions?query=workflow%3Atests
 
 
