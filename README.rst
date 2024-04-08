@@ -4,8 +4,8 @@
 .. image:: https://img.shields.io/pypi/pyversions/pytest-ignore-flaky.svg
    :target: https://pypi.python.org/pypi/pytest-ignore-flaky
 
-.. image:: https://github.com/schettino72/pytest-ignore-flaky/actions/workflows/main.yml/badge.svg
-   :target: https://github.com/schettino72/pytest-ignore-flaky/actions?query=workflow%3Atests
+.. image:: https://github.com/coherent-oss/pytest-ignore-flaky/actions/workflows/main.yml/badge.svg
+   :target: https://github.com/coherent-oss/pytest-ignore-flaky/actions?query=workflow%3Atests
 
 
 pytest-ignore-flaky
@@ -46,7 +46,7 @@ Tested with pytest 6.2 (2021-04-23).
 Project Details
 ===============
 
- - Project code + issue track on github - https://github.com/schettino72/pytest-ignore-flaky
+ - Project code + issue track on github - https://github.com/coherent-oss/pytest-ignore-flaky
  - PyPI - https://pypi.python.org/pypi/pytest-ignore-flaky
 
 
