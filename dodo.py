@@ -1,6 +1,5 @@
-from doitpy.pyflakes import Pyflakes
 from doitpy.package import Package
-
+from doitpy.pyflakes import Pyflakes
 
 DOIT_CONFIG = {
     'default_tasks': [
