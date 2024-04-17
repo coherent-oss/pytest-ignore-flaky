@@ -1,11 +1,21 @@
 .. image:: https://img.shields.io/pypi/v/pytest-ignore-flaky.svg
-   :target: https://pypi.python.org/pypi/pytest-ignore-flaky
+   :target: https://pypi.org/project/pytest-ignore-flaky
 
 .. image:: https://img.shields.io/pypi/pyversions/pytest-ignore-flaky.svg
-   :target: https://pypi.python.org/pypi/pytest-ignore-flaky
 
 .. image:: https://github.com/coherent-oss/pytest-ignore-flaky/actions/workflows/main.yml/badge.svg
-   :target: https://github.com/coherent-oss/pytest-ignore-flaky/actions?query=workflow%3Atests
+   :target: https://github.com/coherent-oss/pytest-ignore-flaky/actions?query=workflow%3A%22tests%22
+   :alt: tests
+
+.. image:: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v2.json
+    :target: https://github.com/astral-sh/ruff
+    :alt: Ruff
+
+.. .. image:: https://readthedocs.org/projects/pytest-ignore-flaky/badge/?version=latest
+..    :target: https://pytest-ignore-flaky.readthedocs.io/en/latest/?badge=latest
+
+.. image:: https://img.shields.io/badge/skeleton-2024-informational
+   :target: https://blog.jaraco.com/skeleton
 
 
 pytest-ignore-flaky

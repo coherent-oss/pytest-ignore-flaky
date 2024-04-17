@@ -4,8 +4,6 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pytest-ignore-flaky"
-description = "ignore failures from flaky tests (pytest plugin)"
-readme = "README.rst"
 authors = [
 	{ name = "Eduardo Naufel Schettino", email = "schettino72@gmail.com" },
 	{ name = "Marcos Alfredo Camargo Leal Pinto", email = "marcos.alfredo@gmail.com" },
@@ -13,6 +11,8 @@ authors = [
 maintainers = [
 	{ name = "Jason R. Coombs", email = "jaraco@jaraco.com" },
 ]
+description = "ignore failures from flaky tests (pytest plugin)"
+readme = "README.rst"
 classifiers = [
 	"Development Status :: 5 - Production/Stable",
 	"Environment :: Console",
@@ -30,8 +30,34 @@ classifiers = [
 	"Topic :: Software Development :: Testing",
 ]
 requires-python = ">=3.8"
-dependencies = ["pytest>=6.0"]
+dependencies = [
+	"pytest>=6.0",
+]
 dynamic = ["version"]
+
+
+[project.optional-dependencies]
+testing = [
+	# upstream
+	"pytest >= 6, != 8.1.*",
+	"pytest-checkdocs >= 2.4",
+	"pytest-cov",
+	"pytest-mypy",
+	"pytest-enabler >= 2.2",
+	"pytest-ruff >= 0.2.1",
+
+	# local
+]
+docs = [
+	# upstream
+	"sphinx >= 3.5",
+	"jaraco.packaging >= 9.3",
+	"rst.linker >= 1.9",
+	"furo",
+	"sphinx-lint",
+
+	# local
+]
 
 [project.urls]
 Homepage = "https://github.com/coherent-oss/pytest-ignore-flaky"
