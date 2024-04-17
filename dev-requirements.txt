@@ -1,3 +1,0 @@
-pyflakes
-doit
-doit-py
