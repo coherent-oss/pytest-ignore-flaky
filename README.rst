@@ -11,8 +11,8 @@
     :target: https://github.com/astral-sh/ruff
     :alt: Ruff
 
-.. .. image:: https://readthedocs.org/projects/pytest-ignore-flaky/badge/?version=latest
-..    :target: https://pytest-ignore-flaky.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/pytest-ignore-flaky/badge/?version=latest
+   :target: https://pytest-ignore-flaky.readthedocs.io/en/latest/?badge=latest
 
 .. image:: https://img.shields.io/badge/skeleton-2024-informational
    :target: https://blog.jaraco.com/skeleton
