@@ -39,8 +39,4 @@ Homepage = "https://github.com/coherent-oss/pytest-ignore-flaky"
 [project.entry-points]
 pytest11 = {pytest_ignore_flaxy = "pytest_ignore_flaky"}
 
-[tool.setuptools]
-py-modules = ["pytest_ignore_flaky"]
-include-package-data = false
-
 [tool.setuptools_scm]
