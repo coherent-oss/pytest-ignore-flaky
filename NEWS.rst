@@ -1,3 +1,12 @@
+v2.2.1
+======
+
+Bugfixes
+--------
+
+- Fix typo in plugin name. (#13)
+
+
 2.2.0
 =====
 
