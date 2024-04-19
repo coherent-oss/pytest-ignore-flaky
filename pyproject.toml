@@ -63,6 +63,6 @@ docs = [
 Homepage = "https://github.com/coherent-oss/pytest-ignore-flaky"
 
 [project.entry-points]
-pytest11 = {pytest_ignore_flaxy = "pytest_ignore_flaky"}
+pytest11 = {pytest_ignore_flaky = "pytest_ignore_flaky"}
 
 [tool.setuptools_scm]
