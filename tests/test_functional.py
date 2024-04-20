@@ -1,3 +1,12 @@
+import sys
+
+
+if sys.version_info < (3, 12):
+    from importlib_resources import files
+else:
+    from importlib.resources import files
+
+
 pytest_plugins = ('pytester',)
 
 
@@ -13,16 +22,7 @@ def get_results(recorder):
     return results
 
 
-TEST_SAMPLE = """
-import pytest
-
-def test_ok():
-    assert 3 == 1 + 2
-
-@pytest.mark.flaky
-def test_mf():
-    assert 3 == 2
-"""
+TEST_SAMPLE = files().joinpath('sample.py').read_text(encoding='utf-8')
 
 
 def test_ignore_flaky(testdir, capsys):
@@ -41,13 +41,7 @@ def test_fail_flaky(testdir, capsys):
     assert results['test_mf', 'call'] == 'failed'
 
 
-TEST_SAMPLE_SUCCEED = """
-import pytest
-
-@pytest.mark.flaky
-def test_flaky_ok():
-    assert 3 == 3
-"""
+TEST_SAMPLE_SUCCEED = files().joinpath('sample succeed.py').read_text(encoding='utf-8')
 
 
 def test_success_flaky(testdir, capsys):

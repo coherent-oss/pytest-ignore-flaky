@@ -47,6 +47,7 @@ testing = [
 	"pytest-ruff >= 0.2.1",
 
 	# local
+	'importlib_resources; python_version < "3.12"',
 ]
 docs = [
 	# upstream
