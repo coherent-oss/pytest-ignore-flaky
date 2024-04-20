@@ -1,5 +1,7 @@
 import sys
 
+import pytest
+
 
 if sys.version_info < (3, 12):
     from importlib_resources import files
@@ -8,6 +10,13 @@ else:
 
 
 pytest_plugins = ('pytester',)
+
+
+@pytest.fixture(autouse=True)
+def testdir(testdir):
+    # disable enabler so tests run without --ignore-flaky
+    testdir.makepyprojecttoml('[tool.pytest-enabler.ignore_flaky]')
+    return testdir
 
 
 def get_results(recorder):
