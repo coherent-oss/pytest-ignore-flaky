@@ -36,10 +36,10 @@ dependencies = [
 dynamic = ["version"]
 
 [project.urls]
-Homepage = "https://github.com/coherent-oss/pytest-ignore-flaky"
+Source = "https://github.com/coherent-oss/pytest-ignore-flaky"
 
 [project.optional-dependencies]
-testing = [
+test = [
 	# upstream
 	"pytest >= 6, != 8.1.*",
 	"pytest-checkdocs >= 2.4",
@@ -51,7 +51,7 @@ testing = [
 	# local
 	'importlib_resources; python_version < "3.12"',
 ]
-docs = [
+doc = [
 	# upstream
 	"sphinx >= 3.5",
 	"jaraco.packaging >= 9.3",
