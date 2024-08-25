@@ -82,4 +82,9 @@ type = [
 [project.entry-points]
 pytest11 = {pytest_ignore_flaky = "pytest_ignore_flaky"}
 
+
 [tool.setuptools_scm]
+
+
+[tool.pytest-enabler.mypy]
+# Disabled due to jaraco/skeleton#143
