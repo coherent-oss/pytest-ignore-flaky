@@ -17,7 +17,6 @@ classifiers = [
 	"Development Status :: 5 - Production/Stable",
 	"Environment :: Console",
 	"Intended Audience :: Developers",
-	"License :: OSI Approved :: MIT License",
 	"Natural Language :: English",
 	"Operating System :: OS Independent",
 	"Operating System :: POSIX",
@@ -30,6 +29,7 @@ classifiers = [
 	"Topic :: Software Development :: Testing",
 ]
 requires-python = ">=3.9"
+license = "MIT"
 dependencies = [
 	"pytest>=6.0",
 ]
