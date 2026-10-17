@@ -2,7 +2,6 @@ import sys
 
 import pytest
 
-
 if sys.version_info < (3, 12):
     from importlib_resources import files
 else:

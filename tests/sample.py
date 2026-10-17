@@ -7,4 +7,4 @@ def test_ok():
 
 @pytest.mark.flaky
 def test_mf():
-    assert 3 == 2
+    assert 3 == 2  # noqa: PLR0133 (deliberately failing sample test)
